@@ -777,8 +777,7 @@ GÊNESIS
 15 Depois Rebeca tomou as melhores vestes de Esaú, seu filho mais velho, que tinha consigo em casa, e vestiu a Jacó, seu filho mais moço;
 16 com as peles dos cabritos cobriu-lhe as mãos e a lisura do pescoço;
 17 e pôs o guisado saboroso e o pão que tinha preparado, na mão de Jacó, seu filho.
-18 E veio Jacó a seu pai, e chamou: Meu pai! E ele disse:
-Eis-me aqui; quem és tu, meu filho?
+18 E veio Jacó a seu pai, e chamou: Meu pai! E ele disse: Eis-me aqui; quem és tu, meu filho?
 19 Respondeu Jacó a seu pai: Eu sou Esaú, teu primogênito; tenho feito como me disseste; levanta-te, pois, senta-te e come da minha caça, para que a tua alma me abençoe.
 20 Perguntou Isaque a seu filho: Como é que tão depressa a achaste, filho meu? Respondeu ele: Porque o Senhor, teu Deus, a mandou ao meu encontro.
 21 Então disse Isaque a Jacó: Chega-te, pois, para que eu te apalpe e veja se és meu filho Esaú mesmo, ou não.
@@ -3060,8 +3059,7 @@ LEVÍTICO
 36 E Arão e seus filhos fizeram todas as coisas que o Senhor ordenara por intermédio de Moisés.
  LEVÍTICO 9
 1 Ora, ao dia oitavo, Moisés chamou a Arão e seus filhos, e os anciãos de Israel,
-2 e disse a Arão: Toma um bezerro tenro para oferta pelo pecado, e um carneiro para holocausto, ambos sem defeito, e
-oferece-os perante o Senhor.
+2 e disse a Arão: Toma um bezerro tenro para oferta pelo pecado, e um carneiro para holocausto, ambos sem defeito, e oferece-os perante o Senhor.
 3 E falarás aos filhos de Israel, dizendo: Tomai um bode para oferta pelo pecado; e um bezerro e um cordeiro, ambos de um ano, e sem defeito, como holocausto;
 4 também um boi e um carneiro para ofertas pacíficas, para sacrificar perante o Senhor e oferta de cereais, amassada com azeite; porquanto hoje o Senhor vos aparecerá.
 5 Então trouxeram até a entrada da tenda da revelação o que Moisés ordenara, e chegou-se toda a congregação, e ficou de pé diante do Senhor.
@@ -9948,7 +9946,7 @@ II REIS
 9 E ela disse a seu marido: Tenho observado que este que passa sempre por nós é um santo homem de Deus.
 10 Façamos-lhe, pois, um pequeno quarto sobre o muro; e ponhamos-lhe ali uma cama, uma mesa, uma cadeira e um candeeiro; e há de ser que, quando ele vier a nós se recolherá ali.
 11 Sucedeu que um dia ele chegou ali, recolheu-se àquele quarto e se deitou.
-l2 Então disse ao seu moço Geazi: Chama esta sunamita. Ele a chamou, e ela se apresentou perante ele.
+12 Então disse ao seu moço Geazi: Chama esta sunamita. Ele a chamou, e ela se apresentou perante ele.
 13 Pois Eliseu havia dito a Geazi: Dize-lhe: Eis que tu nos tens tratado com todo o desvelo; que se há de fazer por ti? Haverá alguma coisa de que se fale por ti ao rei, ou ao chefe do exército? Ao que ela respondera: Eu habito no meio do meu povo.
 14 Então dissera ele: Que se há de fazer, pois por ela? E Geazi dissera: Ora, ela não tem filho, e seu marido é velho.
 15 Pelo que disse ele: Chama-a. E ele a chamou, e ela se pôs à porta.
@@ -10254,7 +10252,7 @@ l2 Então disse ao seu moço Geazi: Chama esta sunamita. Ele a chamou, e ela se 
 12 Então Judá foi derrotado diante de Israel, e fugiu cada um para a sua tenda.
 13 E Jeoás, rei de Israel, aprisionou Amazias, rei de Judá, filho de Joás, filho de Acazias, em Bete-Semes e, vindo a Jerusalém, rompeu o seu muro desde a porta de Efraim até a porta da esquina, quatrocentos côvados.
 14 E tomou todo o ouro e a prata e todos os vasos que se achavam na casa do Senhor e nos tesouros da casa do rei, como também reféns, e voltou para Samária.
-l5 Ora, o restante dos atos de Jeoás, o que fez, e o seu poder, e como pelejou contra Amazias, rei de Judá, porventura não estão escritos no livro das crônicas dos reis de Israel?
+15 Ora, o restante dos atos de Jeoás, o que fez, e o seu poder, e como pelejou contra Amazias, rei de Judá, porventura não estão escritos no livro das crônicas dos reis de Israel?
 16 E dormiu Jeoás com seus pais, e foi sepultado em Samária, junto aos reis de Israel. Jeroboão, seu filho, reinou em seu lugar.
 17 Amazias, filho de Joás, rei de Judá, viveu quinze anos depois da morte de Jeoás, filho de Jeoacaz, rei de Israel.
 18 Ora, o restante dos atos de Amazias, porventura não está escrito no livro das crônicas dos reis de Judá?
@@ -10343,7 +10341,7 @@ l5 Ora, o restante dos atos de Jeoás, o que fez, e o seu poder, e como pelejou 
 11 queimaram incenso em todos os altos, como as nações que o Senhor expulsara de diante deles; cometeram ações iníquas, provocando à ira o Senhor,
 12 e serviram os ídolos, dos quais o Senhor lhes dissera: Não fareis isso.
 13 Todavia o Senhor advertiu a Israel e a Judá pelo ministério de todos os profetas e de todos os videntes, dizendo: Voltai de vossos maus caminhos, e guardai os meus mandamentos e os meus estatutos, conforme toda a lei que ordenei a vossos pais e que vos enviei pelo ministério de meus servos, os profetas.
-l4 Eles porém, não deram ouvidos; antes endureceram a sua cerviz, como fizeram seus pais, que não creram no Senhor seu Deus;
+14 Eles porém, não deram ouvidos; antes endureceram a sua cerviz, como fizeram seus pais, que não creram no Senhor seu Deus;
 15 rejeitaram os seus estatutos, e o seu pacto, que fizera com os pais deles, como também as advertências que lhes fizera; seguiram a vaidade e tornaram-se vãos, como também seguiram as nações que estavam ao redor deles, a respeito das quais o Senhor lhes tinha ordenado que não as imitassem.
 16 E, deixando todos os mandamentos do Senhor seu Deus, fizeram para si dois bezerros de fundição, e ainda uma Asera; adoraram todo o exército do céu, e serviram a Baal.
 17 Fizeram passar pelo fogo seus filhos, suas filhas, e deram-se a adivinhações e encantamentos; e venderam-se para fazer o que era mau aos olhos do Senhor, provocando-o à ira.
@@ -10951,7 +10949,7 @@ I CRÔNICAS
 10 Jeuz, Saquias e Mirma; esses foram seus filhos:, chefes de casas paternas:
 11 De Husim teve Abitube e Elpaal.
 12 Os filhos de Elpaal: Eber, Misã, Semede (este edificou Ono e Lode e suas aldeias),
-l3 Berias e Sema (estes foram chefes de casas paternas dos habitantes de Aijalom, os quais afugentaram os habitantes de Gatel ,
+13 Berias e Sema (estes foram chefes de casas paternas dos habitantes de Aijalom, os quais afugentaram os habitantes de Gatel ,
 14 Aiô, Sasaque e Jerimote.
 15 Zebadias, Arade, Eder,
 16 Micael, Ispá e Joá foram filhos de Berias;
@@ -12983,8 +12981,7 @@ NEEMIAS
 27 Pelo que os entregaste nas mãos dos seus adversários, que os afligiram; mas no templo da sua angústia, quando eles clamaram a ti, tu os ouviste do céu; e segundo a multidão das tuas misericórdias lhes deste libertadores que os libertaram das mãos de seus adversários.
 28 Mas, tendo alcançado repouso, tornavam a fazer o mal diante de ti,; portanto tu os deixavas nas mãos dos seus inimigos, de modo que estes dominassem sobre eles; todavia quando eles voltavam e clamavam a ti, tu os ouvias do céu, e segundo a tua misericórdia os livraste muitas vezes;
 29 e testemunhaste contra eles, para os fazerdes voltar para a tua lei; contudo eles se houveram soberbamente, e não  deram ouvidos aos teus mandamentos, mas pecaram contra os teus juízos, pelos quais viverá o homem que os cumprir; viraram o ombro, endureceram a cerviz e não quiseram ouvir.
-30 Não obstante, por muitos anos os aturaste, e testemunhaste contra eles pelo teu Espírito, por intermédio dos teus profetas;
-todavia eles não quiseram dar ouvidos; pelo que os entregaste nas mãos dos povos de outras terras.
+30 Não obstante, por muitos anos os aturaste, e testemunhaste contra eles pelo teu Espírito, por intermédio dos teus profetas; todavia eles não quiseram dar ouvidos; pelo que os entregaste nas mãos dos povos de outras terras.
 31 Contudo pela tua grande misericórdia não os destruíste de todo, nem os abandonaste, porque és um Deus clemente e misericordioso.
 32 Agora, pois, ó nosso Deus, Deus grande, poderoso e temível, que guardas o pacto e a beneficência, não tenhas em pouca conta toda a aflição que nos alcançou  a nós, a nossos reis, a nossos príncipes, a nossos sacerdotes, a nossos profetas, a nossos pais e a todo o teu povo, desde os dias dos reis da Assíria até o dia de hoje.
 33 Tu, porém, és justo em tudo quanto tem vindo sobre nós; pois tu fielmente procedeste, mas nós perversamente.
@@ -23703,13 +23700,13 @@ HABACUQUE
 9 Ai daquele que adquire para a sua casa lucros criminosos, para pôr o seu ninho no alto, a fim de se livrar das garras da calamidade!
 10 Vergonha maquinaste para a tua casa; destruindo tu a muitos povos, pecaste contra a tua alma.
 11 pois a pedra clamará da parede, e a trave lhe responderá do madeiramento.
-l2 Ai daquele que edifica a cidade com sangue, e que funda a cidade com iniqüidade!
+12 Ai daquele que edifica a cidade com sangue, e que funda a cidade com iniqüidade!
 13 Acaso não procede do Senhor dos exércitos que os povos trabalhem para o fogo e as nações se cansem em vão?
 14 Pois a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.
 15 Ai daquele que da de beber ao seu próximo, adicionando à bebida o seu furor, e que o embebeda para ver a sua nudez!
 16 Serás farto de ignomínia em lugar de honra; bebe tu também, e sê como um incurcunciso; o cálice da mão direita do Senhor se chegará a ti, e ignomínia cairá sobre a tua glória.
 17 Pois a violência cometida contra o Líbano te cobrirá, e bem assim a destruição das feras te amedrontará por causa do sangue dos homens, e da violência para com a terra, a cidade e todos os que nele habitam.
-l8 Que aproveita a imagem esculpida, tendo-a esculpido o seu artífice? a imagem de fundição, que ensina a mentira? Pois o artífice confia na sua própria obra, quando forma ídolos mudos.
+18 Que aproveita a imagem esculpida, tendo-a esculpido o seu artífice? a imagem de fundição, que ensina a mentira? Pois o artífice confia na sua própria obra, quando forma ídolos mudos.
 19 Ai daquele que diz ao pau: Acorda; e à pedra muda: Desperta! Pode isso ensinar? Eis que está coberto de ouro e de prata, e dentro dele não há espírito algum.
 20 Mas o Senhor está no seu santo templo; cale-se diante dele toda a terra; cale-se diante dele toda a terra.
  HABACUQUE 3
@@ -24118,6 +24115,7 @@ MALAQUIAS
 6 e ele converterá o coração dos pais aos filhos, e o coração dos filhos a seus pais; para que eu não venha, e fira a terra com maldição.
 
 NOVO TESTAMENTO
+
 MATEUS
  MATEUS 1
 1 Livro da genealogia de Jesus Cristo, filho de Davi, filho de Abraão.
@@ -32363,7 +32361,3 @@ APOCALIPSE
 19 e se alguém tirar qualquer coisa das palavras do livro desta profecia, Deus lhe tirará a sua parte da árvore da vida, e da cidade santa, que estão descritas neste livro.
 20 Aquele que testifica estas coisas diz: Certamente cedo venho. Amém; vem, Senhor Jesus.
 21 A graça do Senhor Jesus seja com todos.
-
-###########################################
-## Baixado do site: www.umsocorpo.com.br ##
-###########################################
