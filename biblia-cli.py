@@ -15,26 +15,44 @@ def imprimir(texto):
     for linha in texto:
         print(linha.strip())
 
-linhas_livro = []
+versos = []
+capitulos = []
+livros = []
+
 for indice, linha in enumerate(antigo_testamento):
     if linha[0].isalpha() and linha[0] != ' ':
-        if linhas_livro is not None:
-            linhas_livros.append(linhas_livro)
         nomes_livros.append(linha.strip())
-        linhas_livro = []
+        if capitulos is not None:
+            livros.append(capitulos)
+        capitulos = []
         continue
-    linhas_livro.append(linha.strip())
+    if linha[0] == ' ':
+        if versos is not None:
+            capitulos.append(versos)
+        versos = []
+        continue
+    versos.append(linha.strip())
+
+versos = []
+capitulos = []
 
 for indice, linha in enumerate(novo_testamento):
     if linha[0].isalpha() and linha[0] != ' ':
-        if linhas_livro is not None:
-            linhas_livros.append(linhas_livro)
         nomes_livros.append(linha.strip())
-        linhas_livro = []
+        if capitulos is not None:
+            livros.append(capitulos)
+        capitulos = []
         continue
-    linhas_livro.append(linha.strip())
+    if linha[0] == ' ':
+        if versos is not None:
+            capitulos.append(versos)
+        versos = []
+        continue
+    versos.append(linha.strip())
     
-livros = dict(zip(nomes_livros, linhas_livros))
+livros = dict(zip(nomes_livros, livros))
 
-# for chave, valor in livros.items():
-    # print(chave)
+for chave, valor in livros.items():
+    print(chave)
+    print(valor)
+    input()
