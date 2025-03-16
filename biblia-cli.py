@@ -1,10 +1,10 @@
+from os import system
+from unicodedata import normalize, category
 
 caminho_biblia = '/Bible-CLI/biblia.txt'
 
 with open(caminho_biblia, 'r', encoding='utf-8') as arquivo_biblia:
     biblia_txt = arquivo_biblia.readlines()
-
-titulo = ''.join(biblia_txt[:3]).strip()
 
 biblia = biblia_txt[6:]
 
@@ -18,7 +18,7 @@ biblia = {
     'JUI': ('JUÍZES', biblia[6723:7364]),
     'RUT': ('RUTE', biblia[7364:7454]),
     '1SM': ('I SAMUEL', biblia[7454:8297]),
-    '2SM ': ('II SAMUEL', biblia[8297:9017]),
+    '2SM': ('II SAMUEL', biblia[8297:9017]),
     '1RE': ('I REIS', biblia[9017:9856]),
     '2RE': ('II REIS', biblia[9856:10601]),
     '1CR': ('I CRÔNICAS', biblia[10601:11573]),
@@ -26,7 +26,7 @@ biblia = {
     'ESD': ('ESDRAS', biblia[12432:12723]),
     'NEE': ('NEEMIAS', biblia[12723:13142]),
     'EST': ('ESTER', biblia[13142:13319]),
-    'JO': ('JÓ', biblia[13319:14432]),
+    'JO ': ('JÓ', biblia[13319:14432]),
     'SAL': ('SALMOS', biblia[14432:17044]),
     'PRO': ('PROVÉRBIOS', biblia[17044:17991]),
     'ECL': ('ECLESIASTES', biblia[17991:18226]),
@@ -77,45 +77,197 @@ biblia = {
     'APO' : ('APOCALIPSE', biblia[31928:])
 }
 
-def imprimir(texto):
-    if type(texto) == 'list':
-        for linha in texto:
-            print(linha.strip())
-    else:
-        print(texto)
+def normalizar_texto(texto):
+    texto_normalizado = normalize('NFD', texto)
+    texto_normalizado = ''.join(c for c in texto_normalizado if category(c) != 'Mn')
+    return texto_normalizado.lower()
+
+def print_orientacao():
+    print('''
+ORIENTAÇÕES:
+- PARA UM LIVRO INTEIRO, DIGITE:    LIVRO
+- PARA UM CAPÍTULO INTEIRO, DIGITE: LIVRO CAPÍTULO
+- PARA UM VERSO, DIGITE:            LIVRO CAPÍTULO:VERSO
+- PARA VÁRIOS VERSOS, DIGITE:       LIVRO CAPÍTULO:VERSO-VERSO
+- PARA PESQUISAR, DIGITE:           /PESQUISA
+                                    LIVRO /PESQUISA
+                                    LIVRO CAPÍTULO /PESQUISA''')
+
+def print_titulo():
+    print()
+    print(''.join(biblia_txt[:3]).strip())
+
+def print_livros():
+    livros = '''
+LIVROS:
+
+[GEN] - GÊNESIS                [ISA] - ISAÍAS                     [ROM] - ROMANOS
+[EXO] - ÊXODO                  [JER] - JEREMIAS                   [1CO] - I CORÍNTIOS
+[LEV] - LEVÍTICO               [LAM] - LAMENTAÇÕES DE JEREMIAS    [2CO] - II CORÍNTIOS
+[NUM] - NÚMEROS                [EZE] - EZEQUIEL                   [GAL] - GÁLATAS
+[DEU] - DEUTERONÔMIO           [DAN] - DANIEL                     [EFE] - EFÉSIOS
+[JOS] - JOSUÉ                  [OSE] - OSÉIAS                     [FIL] - FILIPENSES
+[JUI] - JUÍZES                 [JOE] - JOEL                       [COL] - COLOSSENSES
+[RUT] - RUTE                   [AMO] - AMÓS                       [1TE] - I TESSALONICENSES
+[1SM] - I SAMUEL               [OBA] - OBADIAS                    [2TE] - II TESSALONICENSES
+[2SM] - II SAMUEL              [JON] - JONAS                      [1TI] - I TIMÓTEO
+[1RE] - I REIS                 [MIQ] - MIQUÉIAS                   [2TI] - II TIMÓTEO
+[2RE] - II REIS                [NAU] - NAUM                       [TIT] - TITO
+[1CR] - I CRÔNICAS             [HAB] - HABACUQUE                  [FLM] - FILEMOM
+[2CR] - II CRÔNICAS            [SOF] - SOFONIAS                   [HEB] - HEBREUS
+[ESD] - ESDRAS                 [AGE] - AGEU                       [TIA] - TIAGO
+[NEE] - NEEMIAS                [ZAC] - ZACARIAS                   [1PE] - I PEDRO
+[EST] - ESTER                  [MAL] - MALAQUIAS                  [2PE] - II PEDRO
+[JO ] - JÓ                     [MAT] - MATEUS                     [1JO] - I JOÃO
+[SAL] - SALMOS                 [MAR] - MARCOS                     [2JO] - II JOÃO
+[PRO] - PROVÉRBIOS             [LUC] - LUCAS                      [3JO] - III JOÃO
+[ECL] - ECLESIASTES            [JOA] - JOÃO                       [JUD] - JUDAS
+[CAN] - CANTARES DE SALOMÃO    [ATO] - ATOS DOS APÓSTOLOS         [APO] - APOCALIPSE'''
+    print(livros)
 
 def solicitar_entrada():
-    return input('>>> ').split(' ')
+    while True:
+        print()
+        entrada = input('SUA CONSULTA: ').strip()
+        return entrada
 
-entrada = solicitar_entrada()
-capitulo = 3
-verso = 16
+def ler_livro(texto_livro):
+    livro = []
+    _versos = []
+    for linha in texto_livro:
+        if linha[0].isalpha() and linha[0] != ' ':
+            continue
+        if linha[0] == ' ':
+            if _versos:
+                livro.append(_versos)
+            _versos = []
+            continue
+        _versos.append(linha)
+    return livro
+        
+def main():
+    while True:
+        try:
+            entrada = solicitar_entrada()
 
-if entrada[0]:
-    livro_escolhido = biblia.get(entrada[0])
-    
-if len(entrada) == 2:
-    capitulo = int(entrada[1])
+            if entrada.startswith('ajuda'):
+                system('cls')
+                print_titulo()
+                print_livros()
+                print_orientacao()
+                return main()
 
-if len(entrada) == 3:
-    verso = int(entrada[2])
+            if entrada.startswith('sair'):
+                break
 
-nome_livro = livro_escolhido[0]
-texto_livro = livro_escolhido[1]
+            dados = entrada.split(' ')
+            system('cls')
 
-livro = []
-versos = []
-for linha in texto_livro:
-    if linha[0].isalpha() and linha[0] != ' ':
-        continue
-    if linha[0] == ' ':
-        if versos:
-            livro.append(versos)
-        versos = []
-        continue
-    versos.append(linha)
+            if '/' in dados[0]:
+                pesquisa = ' '.join(dados[0:]).replace('/', '')
+                resultados = []
+                for verso in biblia_txt:
+                    if verso[0] == ' ':
+                        capitulo = verso.strip()
+                    if normalizar_texto(pesquisa) in normalizar_texto(verso):
+                        resultados.append(f'{capitulo}\n{verso}')
+                
+                if not resultados:
+                    print(f'Nenhum resultado encontrado para a pesquisa por "{pesquisa}"...')
+                    continue
 
-print(nome_livro)
-print(livro[capitulo - 1][verso - 1])
+                for resultado in resultados:
+                    print(resultado.strip())
+                continue
+            
+            livro = biblia.get(dados[0])
+            nome_livro = livro[0]
+            texto_livro = livro[1]
+            livro = ler_livro(texto_livro)
 
+            if len(dados) == 1:
+                print(nome_livro)
+                for indice, capitulo in enumerate(livro):
+                    print(f'\n{nome_livro} {indice + 1}')
+                    for verso in capitulo:
+                        print(verso.strip())
+                continue
 
+            if '/' in dados[1]:
+                pesquisa = ' '.join(dados[1:]).replace('/', '')
+                resultados = []
+
+                for indice, capitulo in enumerate(livro):
+                    for verso in capitulo:
+                        if normalizar_texto(pesquisa) in normalizar_texto(verso):
+                            resultados.append(f'{nome_livro} {indice + 1}\n{verso}')
+                
+                if not resultados:
+                    print(f'Nenhum resultado encontrado para a pesquisa por "{pesquisa}"...')
+                    continue
+
+                for resultado in resultados:
+                    print(resultado.strip())
+                continue
+
+            if len(dados) == 2:
+                capitulo_versos = dados[1].split(':')
+                capitulo = int(capitulo_versos[0])
+
+                if len(capitulo_versos) == 1:
+                    print(f'{nome_livro} {capitulo}')
+                    for verso in livro[capitulo - 1]:
+                        print(verso.strip())
+                    continue
+
+                if len(capitulo_versos) > 1:
+                    versos = capitulo_versos[1]
+                    if '-' in versos:
+                        versos = versos.split('-')
+                        verso_inicial = int(versos[0])
+                        if versos[1]:
+                            verso_final = int(versos[1])
+                            texto = livro[capitulo - 1][verso_inicial - 1:verso_final]
+                        else:
+                            texto = livro[capitulo - 1][verso_inicial - 1:]
+                    else:
+                        texto = livro[capitulo - 1][int(versos) - 1]
+                    print(f'{nome_livro} {capitulo}')
+                    if isinstance(texto, list):
+                        for verso in texto:
+                            print(verso.strip())
+                    else:
+                        print(texto.strip())
+                    continue
+
+            if '/' in dados[2]:
+                if ':' in dados[1]:
+                    raise
+                pesquisa = ' '.join(dados[2:]).replace('/', '')
+                resultados = []
+                capitulo = int(dados[1])
+
+                for verso in livro[capitulo - 1]:
+                    if normalizar_texto(pesquisa) in normalizar_texto(verso):
+                        resultados.append(verso)
+                
+                if not resultados:
+                    print(f'Nenhum resultado encontrado para a pesquisa por "{pesquisa}"...')
+                    continue
+                
+                print(f'{nome_livro} {capitulo}')
+                for resultado in resultados:
+                    print(resultado.strip())
+                continue
+        except Exception as ex:
+            system('cls')
+            print('SUA CONSULTA NÃO FUNCIONOU...')
+            print_orientacao()
+            main()
+
+if __name__ == '__main__':
+    system('cls')
+    print_titulo()
+    print_livros()
+    print_orientacao()
+    main()
